@@ -1,0 +1,36 @@
+By Menno van 't Riet
+
+
+Interpretation of the resluts
+
+The recomended system has generated a top 50 of recomended movies.
+
+The original pick of favorite movies were the following:
+- Inglourious basterds
+- Pulp fiction
+- Inception
+
+Based on these favorite movies new recommended movies were generated.
+For intrest on starring, title and summary csv files were created with 50 recomended movies each.
+
+Interpeting these files with recommended movies we can see that some of them quite match. For example the recommended movies based on inglourious basterds and summary (top50recommendationsIng-bas (Summary)) which gave the following recommendations:
+the-simpsons-movie,0.999999
+charlie-and-the-chocolate-factory,0.999999
+mission-impossible-ii
+These are 3 films that i have seen and have enjoyed.
+
+
+For the python recommended system i used the movie Inception.
+
+Unfortunately getting the output file from python couldnt be completed, due to the following error:
+
+(my_venv) pi@raspberrypi:~ $ time python /home/pi/Desktop/userreview.py
+Traceback (most recent call last):
+  File "/home/pi/Desktop/userreview.py", line 13, in <module>
+    x.append(row['Author'])
+TypeError: list indices must be integers or slices, not str
+
+real	0m6,575s
+user	0m5,753s
+sys	0m0,818s
+
